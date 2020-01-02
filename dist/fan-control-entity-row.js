@@ -156,27 +156,27 @@ class CustomFanRow extends Polymer.Element {
   	} else {
 
   		if (low == 'on') {
-			lowcolor = 'background-color: var(--paper-toggle-button-checked-button-color)';
+			lowcolor = 'background-color: var(--switch-checked-color)';
 		} else {
-			lowcolor = 'background-color: var(--paper-toggle-button-unchecked-button-color)';
+			lowcolor = 'background-color: var(--switch-unchecked-button-color)';
 		}
 		
 		if (med == 'on') {
-			medcolor = 'background-color: var(--paper-toggle-button-checked-button-color)';
+			medcolor = 'background-color: var(--switch-checked-color)';
 		} else {
-			medcolor = 'background-color: var(--paper-toggle-button-unchecked-button-color)';
+			medcolor = 'background-color: var(--switch-unchecked-button-color)';
 		}
 		
 		if (high == 'on') {
-			hicolor = 'background-color: var(--paper-toggle-button-checked-button-color)';
+			hicolor = 'background-color: var(--switch-checked-color)';
 		} else {
-			hicolor = 'background-color: var(--paper-toggle-button-unchecked-button-color)';
+			hicolor = 'background-color: var(--switch-unchecked-button-color)';
 		}
 		
 		if (offstate == 'on') {
-			offcolor = 'background-color: var(--paper-toggle-button-checked-button-color)';
+			offcolor = 'background-color: var(--switch-checked-color)';
 		} else {
-			offcolor = 'background-color: var(--paper-toggle-button-unchecked-button-color)';
+			offcolor = 'background-color: var(--switch-unchecked-button-color)';
 		}
 	}
 	
