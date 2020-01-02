@@ -22,7 +22,10 @@ class CustomFanRow extends Polymer.Element {
 	            float: right !important;
 		    padding: 1px;
 		}
-				
+                ha-entity-toggle {
+                    margin-left: 16px;
+                }
+
                 </style>
             	  <hui-generic-entity-row hass="[[hass]]" config="[[_config]]">
                     <div class='horizontal justified layout' on-click="stopPropagation">
@@ -44,12 +47,7 @@ class CustomFanRow extends Polymer.Element {
                         toggles name="high"
                         on-click='setSpeed'
                         disabled='[[_isOnHigh]]'>HIGH</button>
-		    <button
-			class='speed'
-                        style='[[_offColor]]'
-                        toggles name="off"
-                        on-click='setSpeed'
-                        disabled='[[_isOffState]]'>OFF</button>
+                    <ha-entity-toggle hass="[[hass]]" state-obj="[[_stateObj]]"></ha-entity-toggle>
                   </div>
                 </hui-generic-entity-row>
         `;
